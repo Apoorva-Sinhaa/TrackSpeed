@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+#  TrackSpeed – Math Multiplication Speed Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18-blue)  
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)  
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38BDF8)  
+![Vite](https://img.shields.io/badge/Vite-Build%20Tool-purple)  
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
-Currently, two official plugins are available:
+TrackSpeed is a fast and engaging **math multiplication game** designed to improve speed and accuracy.  
+Players choose between **Easy**, **Medium**, and **Hard** modes—each offering different ranges of numbers and countdown durations. The goal is simple: **solve as many multiplication questions as possible before time runs out.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is built with **React + TypeScript**, styled using **TailwindCSS**, and powered by **Vite** for blazing-fast development and production builds.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌐 Live Demo  
+👉 **https://track-speed.vercel.app/**  
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎯 Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Three difficulty levels:**
+  - **Easy** → smaller numbers + longer timer  
+  - **Medium** → balanced difficulty + normal timer  
+  - **Hard** → larger numbers + short timer  
+- ⏳ **Real-time countdown timer**
+- 🔢 **Instant answer validation**
+- 📊 **Live scoring**
+- 📱 **Fully responsive UI using TailwindCSS**
+- ⚡ **Powered by Vite for fast performance**
+- 🎮 Fun, clean, minimalistic game UI
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+
+
+
+
+## 🚧 Getting Started
+
+### 1️⃣ Clone the repository
+```sh
+git clone https://github.com/Apoorva-Sinhaa/TrackSpeed.git
+cd TrackSpeed
+````
+
+### 2️⃣ Install dependencies
+
+```sh
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3️⃣ Start development server
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```sh
+npm run dev
 ```
+
+### 4️⃣ Build for production
+
+```sh
+npm run build
+```
+
+---
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are always welcome.  
+Feel free to open an issue or submit a PR.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## ⭐ Support
+
+If you like this project, give it a star on GitHub — it means a lot! 🌟
+
+
+
+
